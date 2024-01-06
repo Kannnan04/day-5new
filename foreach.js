@@ -1,5 +1,3 @@
-// for-in method
-
 
 let myData = {
     firstName : "Kannan",
@@ -11,13 +9,6 @@ let myData = {
     frontEnd: "HTML, CSS, BS, JS"
 }
 
-let myArray = [];
-
-for (key in myData){
-let op = []
-op.push(key);
-op.push(myData[key])
-myArray.push(op)
-
-}
-console.log(myArray)
+myData.foreach((data) =>{
+    console.log(data.firstName)
+})
